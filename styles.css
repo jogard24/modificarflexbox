@@ -1,0 +1,185 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #23f999;
+}
+
+main {
+    display: flex;;
+}
+
+aside {
+    width: 80px;
+    background-color: #013220;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+aside img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav .nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #0c9f72;
+}
+
+.phone {
+    color: #0c9f72;
+    font-weight: bold;
+}
+
+section.parrafo1 {
+    display: flex;
+    margin-top: 40px;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.texto {
+    flex: 1;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    background-image: url(assets/Imagen-dental.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parrafo1 h2 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+.parrafo1 h2 span {
+    color: #0c9f72;
+}
+
+.parrafo1 p {
+    color: #666;
+    margin: 20px 0;
+    max-width: 400px;
+}
+
+.boton1 {
+    margin-top: 20px;
+}
+
+.boton1 button {
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.boton-primero {
+    background-color: #0c9f72;
+    color: white;
+}
+
+.boton-segundo {
+    background-color: white;
+    color: #0c9f72;
+    border: 2px solid #0c9f72;
+}
+
+.formulario {
+    flex: 1;
+    background: #f8f8f8;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario1 {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.fomulario1 h3 {
+    color: #0c9f72;
+    margin-bottom: 20px;
+}
+
+.formulario1 input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.formulario1 button {
+    background-color: #0c9f72;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+

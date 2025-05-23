@@ -171,9 +171,14 @@ section.parrafo1 {
 }
 
 .boton-segundo {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.178);
     color: #0c9f72;
     border: 2px solid #0c9f72;
+}
+
+form button {
+    display: block;
+    margin: 20px auto;
 }
 
 .formulario {
@@ -182,8 +187,8 @@ section.parrafo1 {
 }
 
 .formulario1 {
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 900px;
     background: white;
     padding: 90px;
     border-radius: 10px;
@@ -214,4 +219,10 @@ section.parrafo1 {
     font-weight: 600;
     cursor: pointer;
     margin-top: 10px;
+}
+
+h3 {
+    margin: 42px;
+    color: #0c9f72;
+    text-align: center;
 }

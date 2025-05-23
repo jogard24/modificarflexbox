@@ -1,82 +1,81 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: sans-serif;
     background-color: #23f999;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.contenedor {
+    text-align: left;
+    margin: -20px;
+    white-space: nowrap;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
 }
 
 aside {
     width: 80px;
     background-color: #013220;
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
     min-height: 100vh;
-    margin: 5px;
+    padding: 20px 0;
+}
+
+.landing {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ffffff;
+    width: calc(100% - 100px);
+    margin-left: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    margin-top: -650px;
 }
 
 aside img {
     width: 20px;
     height: 20px;
-    align-items: center;
+    margin: 20px 0;
     filter: invert(1);
 }
 
-.social-icons {
-  margin: 5px;
-  justify-content: center;
-  margin-top: 20px;
-  top: 10px;
-  text-align: center;
-}
-
 header {
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     background: white;
     padding: 20px 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-.title {
-    font-size: 30px;
-    font-weight: bold;
+    overflow: hidden;
 }
 
 .menu {
-    display: inline-block;
-    align-items: center;
-    /*gap: 30px;*/
+    float: left;
     text-align: center;
-    align-items: center;
-    margin-left: 20px;
 }
 
 .nav .nav-list {
-    display: inline-block;
-    gap: 20px;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    top: 50px;
 }
 
-.nav-list li a {
+.nav .nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav .nav-list li a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
@@ -88,31 +87,53 @@ header {
 }
 
 .phone {
+    float: right;
     color: #0c9f72;
     font-weight: bold;
+    line-height: 40px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 10px 0;
 }
 
 section.parrafo1 {
-    display: inline;
-    margin-top: 40px;
+    display: block;
+    margin: 40px 10px;
     background: rgb(10, 241, 211);
     padding: 5px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     overflow: hidden;
+    text-align: center;
+}
+
+.texto, .formulario {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin: 10px;
 }
 
 .texto {
-    flex: 1;
     padding: 90px;
     background: rgba(0, 0, 0, 0.4);
     color: white;
     background-image: url(assets/Imagen-dental.jpg);
     background-size: cover;
     background-position: center;
-    display: inline-block;
-    justify-content: center;
     border-radius: 10px;
+    text-align: left;
 }
 
 .parrafo1 h2 {
@@ -125,7 +146,7 @@ section.parrafo1 {
 }
 
 .parrafo1 p {
-    color: #666;
+    color: #ffffff;
     margin: 20px 0;
     max-width: 400px;
 }
@@ -156,12 +177,8 @@ section.parrafo1 {
 }
 
 .formulario {
-    /*flex: 1;*/
     background: #f8f8f8;
     padding: 5px;
-    display: inline;
-    align-items: center;
-    justify-content: center;
 }
 
 .formulario1 {
@@ -171,9 +188,7 @@ section.parrafo1 {
     padding: 90px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    /*flex-direction: column;*/
-    align-items: center;
+    text-align: left;
 }
 
 .fomulario1 h3 {
@@ -182,6 +197,7 @@ section.parrafo1 {
 }
 
 .formulario1 input {
+    width: 100%;
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 8px;
@@ -192,19 +208,10 @@ section.parrafo1 {
 .formulario1 button {
     background-color: #0c9f72;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 25px;
     font-weight: 600;
     cursor: pointer;
     margin-top: 10px;
 }
-
-h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: white;
-}
-
-

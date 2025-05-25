@@ -126,14 +126,28 @@ section.parrafo1 {
 }
 
 .texto {
+    position: relative;
+    margin: 0;
     padding: 90px;
-    background: rgba(0, 0, 0, 0.4);
     color: white;
-    background-image: url(assets/Imagen-dental.jpg);
+    background-image: linear-gradient(rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0.1)), url(assets/Imagen-dental.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     text-align: left;
+    z-index: 1;
+}
+
+.texto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    filter: brightness(1.4) blur(2px);
+    z-index: 0;
 }
 
 .parrafo1 h2 {
@@ -174,6 +188,10 @@ section.parrafo1 {
     background-color: rgba(255, 255, 255, 0.178);
     color: #0c9f72;
     border: 2px solid #0c9f72;
+}
+
+.boton-primero:hover {
+    background-color: #0a7b5a;
 }
 
 form button {

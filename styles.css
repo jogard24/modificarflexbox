@@ -6,371 +6,219 @@
     box-sizing: border-box;
 }
 
-/*Estilos del body*/
+/* Estilos del cuerpo */
 body {
-    font-family: sans-serif;
-    background-color: #23f999;
     margin: 0;
-    padding: 0;
-    text-align: left;
-}
-
-/*Estilos del contenedor*/
-.contenedor {
-    text-align: left;
-    margin: -20px;
-    white-space: nowrap;
-}
-
-/*Estilos del encabezado*/
-h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: white;
-}
-
-/*Estilos del aside y landing*/
-aside {
-    width: 80px;
-    background-color: #013220;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    min-height: 100vh;
-    padding: 20px 0;
-}
-
-
-.landing {
-    display: inline-block;
-    vertical-align: top;
-    background-color: #ffffff;
-    width: calc(100% - 100px);
-    margin-left: 80px;
-    border-radius: 10px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-    margin-top: -650px;
-}
-
-aside img {
-    width: 20px;
-    height: 20px;
-    margin: 20px 0;
-    filter: invert(1);
-}
-
-/*Estilos del encabezado*/
-header {
-    display: block;
-    background: white;
-    padding: 20px 40px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-/*Estilos de la navegación*/
-.menu {
-    float: left;
-    text-align: center;
-}
-
-.nav .nav-list {
-    list-style: none;
-}
-
-.nav .nav-list li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.nav .nav-list li a {
-    text-decoration: none;
+    font-family: Arial, sans-serif;
+    background-color: #21a270;
     color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
 }
 
-.nav-list li a:hover {
-    color: #0c9f72;
-}
-
-/*Estilos CSS para el número de teléfono*/
-.phone {
-    float: right;
-    color: #0c9f72;
-    font-weight: bold;
-    line-height: 40px;
-}
-
-/*Estilos CSS uso de ::after*/
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/*Estilos CSS para el título*/
+/* Estilos del encabezado */
 .title {
-    font-size: 30px;
-    font-weight: bold;
     text-align: center;
+    padding: 1rem;
     color: white;
+    font-size: 1.8rem;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f8fdfc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Estilos del encabezado */
+.icons {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #004d40;
+    padding: 1rem 0.5rem;
+    height: 300px;
+}
+
+/* Estilos de los iconos sociales */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos de los iconos sociales */
+.social-icons li {
     margin: 10px 0;
 }
 
-/*Estilos CSS para el párrafo*/
-section.parrafo1 {
-    display: block;
-    margin: 40px 10px;
-    background: rgb(10, 241, 211);
-    padding: 5px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    overflow: hidden;
+/* Estilos de los iconos sociales */
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos de la navegación */
+.menu {
+    text-align: center;
+    background: #e9f6f2;
+    padding: 1rem 0;
+}
+
+/* Estilos de la lista de navegación */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos de los elementos de la lista de navegación */
+.nav-list li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-list a {
+    text-decoration: none;
+    color: #003300;
+    font-weight: bold;
+}
+
+/* Estilos de los enlaces de navegación al pasar el mouse */
+.nav-list a:hover {
+    color: #21a270;
+    transition: 0.2s;
+}
+
+/* Estilos del número de teléfono */
+.phone {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #21a270;
+}
+
+/* Estilos del contenido principal */
+.contenido {
+    padding: 2rem;
     text-align: center;
 }
 
-/*Estilos CSS para el texto y formulario*/
-.texto, .formulario {
+/* Estilos de los bloques */
+.bloque-izq, .bloque-der {
     display: inline-block;
     vertical-align: top;
-    width: 48%;
-    margin: 10px;
+    width: 45%;
+    margin: 1%;
+    background: white;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/*Estilos CSS para el texto y uso de linear-gradient para el fondo*/
-.texto {
-    position: relative;
-    margin: 0;
-    padding: 90px;
-    color: white;
-    background-image: linear-gradient(rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0.1)), url(assets/Imagen-dental.jpg);
+/* Agregar imagen bloque izquierdo */
+.bloque-izq {
+    background-image: url(assets/Imagen-dental.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
+    border-radius: 4px;
     text-align: left;
-    z-index: 1;
 }
 
-/*Estilos CSS para el texto antes del párrafo uso ::before*/
-.texto::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    filter: brightness(1.4) blur(2px);
-    z-index: 0;
-}
-
-/*Estilos CSS para el título dentro del texto*/
-.parrafo1 h2 {
-    font-size: 36px;
-    margin: 0 0 20px 0;
-}
-
-/*Estilos CSS para el título dentro del texto con uso de span*/
-.parrafo1 h2 span {
-    color: #0c9f72;
-}
-
-/*Estilos CSS para el párrafo dentro del texto*/
-.parrafo1 p {
-    color: #ffffff;
-    margin: 20px 0;
-    max-width: 400px;
-}
-
-/*Estilos CSS para el button dentro del texto*/
-.boton1 {
-    margin-top: 20px;
-}
-
-.boton1 button {
-    padding: 10px 20px;
-    border: none;
-    margin-right: 10px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.boton-primero {
-    background-color: #0c9f72;
+/* Estilos del bloque izquierdo */
+.bloque-izq h2 {
+    font-size: 1.8rem;
     color: white;
 }
 
+/* Estilos del bloque izquierdo con efecto de superposición */
+.bloque-izq span {
+    color: #21a270;
+    font-weight: bold;
+}
+
+/* Estilos del bloque derecho */
+.bloque-izq p {
+    margin: 1rem 0;
+    color: #555;
+}
+
+/* Estilos del bloque derecho */
+.botones {
+    margin-top: 1rem;
+}
+
+/* Estilos de los botones */
+.boton-primero, .boton-segundo {
+    background-color: #21a270;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    margin: 0.3rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Estilos de los botones al pasar el mouse */
 .boton-segundo {
-    background-color: rgba(255, 255, 255, 0.178);
-    color: #0c9f72;
-    border: 2px solid #0c9f72;
+    background-color: #004d40;
 }
 
-/*Estilos CSS para el botón hover*/
-.boton-primero:hover {
-    background-color: #0a7b5a;
+/* Estilos del bloque derecho */
+.bloque-der h3 {
+    color: #21a270;
+    margin-bottom: 1rem;
 }
 
-/*Estilos CSS para el formulario*/
-form button {
-    display: block;
-    margin: 20px auto;
-}
-
-.formulario {
-    background: #f8f8f8;
-    padding: 5px;
-}
-
-.formulario1 {
-    width: 100%;
-    max-width: 900px;
-    background: white;
-    padding: 90px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.fomulario1 h3 {
-    color: #0c9f72;
-    margin-bottom: 20px;
-}
-
-.formulario1 input {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 8px;
+/* Estilos del formulario */
+form input {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 20px;
     border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-.formulario1 button {
-    background-color: #0c9f72;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-/*Estilos css para el título dentro del formulario*/
-h3 {
-    margin: 42px;
-    color: #0c9f72;
-    text-align: center;
-}
-
-/*Aplicar medias queries*/
-@media (min-width: 768px) {
-    body {
-        background-color: #333;
-        width: 100%;
-        height: 50%;
-    }
-
-    .contenedor {
-        text-align: left;
-        margin: -20px;
-        white-space: nowrap;
-    }
-
-    h1 {
-    width: 100%;
-    height: 100%;
-    }
-
-    .formulario1 button {
-    margin: 0;
-    padding: 0;
-   }
-   
-   .menu button {
-    display: none;
-   }
-
-   .nav {
-    display: block;
-   }
-
-   .nav-list {
-    display: none;
-    margin-top: 10px;
-    padding: 0;
-    background-color: #d4ed;
-    color: #155724;
-    border: 1px solid #c3e6;
-   }
-
-   .nav:target .nav-list {
-    display: block;
-   }
-}
-
-.menu button {
-    display: block;
-    padding: 5px;
-    border: none;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    position: absolute;
-    right: 325px;
-    left: 80px;
-    margin-top: -280px;
-}
-
-.nav {
-    display: none;
-}
-
-.menu input[type="checkbox"], .menu .nav .nav-list {
-    position: absolute;
+    font-size: 1rem;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    right: 0;
-    top: 0;
-    width: 48px;
-    height: 48px;
 }
 
-/*.menu .nav, .menu .nav-list {
-    font-size: 48px;
-    pointer-events: none;
+form button {
+    margin-top: 1rem;
+    width: 50%;
 }
 
-.menu input[type="checkbox"] {
-    opacity: 0;
-}
-
-.menu {
-    color: white;
-    position: relative;
-    background: #123456;
-    min-height: 48px;
-}
-
-.menu nav {
-    display: none;
-}
-
-.menu input:checked ~ nav {
-    display: inline;
-}
-
-.menu input:checked ~ .nav-list {
-    display: inline-block;
-}
-
-.menu input:not(:checked) ~ ul {
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .bloque-izq, .bloque-der {
+    width: 90%;
     display: block;
-}*/
+    margin: 1rem auto;
+    }
+
+    .icons {
+    position: static;
+    display: flex;
+    justify-content: center;
+    background: #004d40;
+    }
+
+    .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+    }
+
+    .nav-list li {
+    display: block;
+    margin: 0.5rem 0;
+    }
+
+    .menu {
+    padding: 1rem;
+    }
+
+    .phone {
+    font-size: 1rem;
+    }
+}

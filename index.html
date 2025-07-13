@@ -7,10 +7,10 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 class="title">Landing Page Template</h1>
-    <div class="contenedor">
-    <aside class="icons">
-    <ul class="social-icons">
+    <h1 class="title">Landing Page Template</h1> <!-- Bloque -->
+    <div class="title__contenedor"> <!-- Elemento -->
+    <aside class="title__icons"> <!-- Elemento -->
+    <ul class="title__social-icons"> <!-- Elemento -->
         <li><a href="#"><img src="assets/image-home.png" alt="Home"></a></li>
         <li><a href="#"><img src="assets/Icono-Twitter.png" alt="Twitter"></a></li>
         <li><a href="#"><img src="assets/Icono-Facebook.png" alt="Facebook"></a></li>
@@ -19,11 +19,11 @@
     </ul>
     </aside>
     <main>
-        <div class="landing">
+        <div class="landing"> <!-- Bloque -->
         <header>
-            <div class="menu">
-            <nav class="nav">
-                <ul class="nav-list">
+            <div class="landing__menu"> <!-- Elemento -->
+            <nav class="landing__nav"> <!-- Elemento -->
+                <ul class="landing__nav-list--modified"> <!-- Modificador -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -31,28 +31,28 @@
                 <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="phone">(+605) 1234-56789</div>
+            <div class="phone">(+605) 1234-56789</div> <!-- Bloque -->
             </div>
         </header>
-        <section class="contenido">
-            <div class="bloque-izq">
-            <h2>Full Dedicated To Your<br><span>Dental Health.</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>
+        <section class="contenido"> <!-- Bloque -->
+            <div class="contenido__bloque-izq"> <!-- Elemento -->
+            <h2 class="contenido__text--modified">Full Dedicated To Your<br><span class="contenido__text">Dental Health.</span></h2> <!-- Elemento -->
+            <p class="contenido__text--modified">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p> <!-- Modificador -->
             <div class="botones">
-                <button class="boton-primero">Book now</button>
-                <button class="boton-segundo">Read more</button>
+                <button class="botones__boton-primero">Book now</button> <!-- Elemento -->
+                <button class="botones__boton-segundo--modified">Read more</button> <!-- Modificador -->
             </div>
             </div>
-            <div class="bloque-der">
-            <h3>Book an Appointment</h3>
-            <form>
-                <input type="text" placeholder="Your first name*" />
-                <input type="text" placeholder="Your last name*" />
-                <input type="email" placeholder="Your email address*" />
-                <input type="text" placeholder="Your contact no*" />
-                <input type="date" />
-                <input type="time" />
-                <button type="submit" class="boton-primero">Book now</button>
+            <div class="contenido__bloque-der"> <!-- Elemento -->
+            <h3 class="contenido__title-der">Book an Appointment</h3> <!-- Elemento -->
+            <form class="form"> <!-- Bloque -->
+                <input class="form__text" type="text" placeholder="Your first name*" /> <!-- Elemento -->
+                <input class="form__text" type="text" placeholder="Your last name*" /> <!-- Elemento -->
+                <input class="form__text" type="email" placeholder="Your email address*" /> <!-- Elemento -->
+                <input class="form__text" type="text" placeholder="Your contact no*" /> <!-- Elemento -->
+                <input class="form__text" type="date" /> <!-- Elemento -->
+                <input class="form__text" type="time" /> <!-- Elemento -->
+                <button class="form__text--modified" type="submit" class="botones__boton-primero">Book now</button> <!-- Modificador -->
             </form>
             </div>
         </section>

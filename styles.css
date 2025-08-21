@@ -9,63 +9,66 @@
 /* Estilos del cuerpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #21a270;
+    background-color: #70c7a652;
     color: #333;
 }
 
 main {
     width: 1000px;
-    margin: 40px auto;
-    background: #fff;
-    border: 10px;
+    margin: 20px auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: relative;
+    /* border: 10px; */
+    /* background: #c61919; */
+    /* position: relative; */
 }
 
-main::after, section {
+/* main::after, section {
     content: "";
     display: block;
     clear: both;
-}
+} */
 
 /* Estilos del encabezado */
 .title { /* Bloque de título */
     text-align: center;
     padding: 1rem;
-    color: white;
+    color: rgb(41, 107, 28);
     font-size: 1.8rem;
 }
 
 /* Contenedor principal */
-.title__contenedor { /* Elemento contenedor del título */
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #f8fdfc;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-/* Estilos del encabezado */
-.title__icons { /* Elemento de iconos */
+.title__contenedor *{ /* Elemento contenedor del título */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem auto;
+    /* max-width: 1200px; */
+    /* background: #d7121200; */
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+    /* position: relative; */
+  }
+  
+  /* Estilos del encabezado */
+  .title__icons { /* Elemento de iconos */
     position: fixed;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-}
-
-/* Estilos de los iconos sociales */
-.title__social-icons { /* Elemento de iconos sociales */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  }
+  
+  /* Estilos de los iconos sociales */
+  .title__social-icons { /* Elemento de iconos sociales */
+    /* list-style: none; */
+    /* padding: 0; */
+    /* margin: 0; */
+    /* text-align: center; */
 }
 
 /* Estilos de los iconos sociales */
 .title__social-icons li { /* Elemento de iconos sociales */
-    margin: 10px 0;
-    list-style: none;
+    /* margin: 10px 0; */
+    /* list-style: none; */
 }
 
 /* Estilos de los iconos sociales */
@@ -75,25 +78,32 @@ main::after, section {
 }
 
 /* Estilos de la navegación */
+
+.menu {
+  display: flex;
+}
+
 .landing { /* Bloque de navegación */
-    background: #004d40;
-    padding: 1rem 0;
-    color: white;
+  background: #004d40;
+  padding: 1rem 0;
+  color: white;
 }
 
 .landing__menu { /* Elemento de menú de navegación */
+    width: 63rem;
     text-align: center;
     background: #e9f6f2;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .landing__nav { /* Elemento de navegación */
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+    /* width: 100%; */
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* position: relative; */
 }
 
 /* Estilos de la lista de navegación */
@@ -145,67 +155,85 @@ main::after, section {
     color: #21a270;
 }
 
-/* Estilos del contenido principal */
+/* Estilos del contenido principal------contenedor de las dos cards */
 .contenido { /* Bloque de contenido */
-    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+    margin: 0 auto;
+    background-color: #ceeee2;
+  }
+   /* Elemento de texto del contenido dental healt */
+  /* .contenido__text {
+    font-size: 25px;
+    color: #8829d1;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  } */
+  
+  .contenido__text--modified { /* Modificador de texto del contenido lorem */
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  
+  /* Estilos al conetenido de los dos bloques  */
+  .contenido__bloque-izq, .contenido__bloque-der { /* Elementos de bloques */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
-}
-
-.contenido__text { /* Elemento de texto del contenido */
-    font-size: 25px;
-    color: #004d40;
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
-
-.contenido__text--modified { /* Modificador de texto del contenido */
-    font-size: 25px;
-    color: white;
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
-
-/* Estilos de los bloques */
-.contenido__bloque-izq, .contenido__bloque-der { /* Elementos de bloques */
-    display: inline-block;
-    vertical-align: top;
-    width: 45%;
+    width: 55%;
     margin: 1%;
     background: white;
-    padding: 2rem;
-    box-sizing: border-box;
+    padding: 3rem;
+    /* vertical-align: top; */
+    /* box-sizing: border-box; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.637);
+    height: 37rem;
 }
 
 .contendio__bloque-der { /* Elemento de bloque derecho */
-    width: 50%;
-    float: left;
-    padding: 40px;
-    background-color: white;
+    display: flex; 
+    flex-direction: column;
+    /* width: 37rem; */
+    /* width: 50px; */
+    /* padding: 20px; */
+    /* background-color: rgb(230, 42, 42); */
+    /* flex-grow: 5 ; */
+    /* height: 57rem; */
+    /* float: left; */
 }
 
 .contenido__title-der { /* Elemento de título del bloque derecho */
+    display: flex;
+    justify-content: center;
     font-size: 22px;
     color: #004d40;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-top: 20px;
+
+    /* margin-bottom: 20px; */
+    /* text-align: center; */
+    /* margin-top: 20px; */
 }
 
 /* Agregar imagen bloque izquierdo */
 .contenido__bloque-izq { /* Elemento de bloque izquierdo */
-    width: 50%;
-    float: left;
+    display: flex;
+    flex-direction: column;
     background-image: url(assets/Imagen-dental.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
-    padding: 5px;
-    margin: -20px;
-    margin-top: 5px;
-    color: white;
-    position: relative;
+    /* width: 50%; */
+    /* float: left; */
+    /* height: 37rem; */
+    /* padding: 5px; */
+    /* margin: -20px; */
+    /* margin-top: 9px; */
+    /* color: rgb(246, 36, 36); */
+    /* position: relative; */
 }
 
 /* Estilos del bloque izquierdo */
@@ -216,10 +244,12 @@ main::after, section {
 
 /* Estilos del bloque izquierdo con efecto de superposición */
 .contenido__bloque-izq span { /* Elemento de superposición del bloque izquierdo */
+    display: flex;
+    justify-content: center;
     color: #21a270;
     font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    /* margin-bottom: 10px; */
 }
 
 /* Estilos del bloque derecho */
@@ -231,7 +261,9 @@ main::after, section {
 
 /* Estilos del bloque derecho */
 .botones { /* Bloque de botones */
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 20px; */
 }
 
 /* Estilos de los botones */
@@ -240,11 +272,13 @@ main::after, section {
     background-color: #21a270;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border: none;
-    margin-right: 10px;
-    display: inline-block;
-    font-size: 14px;
+    height: 2rem;
+    width: 7rem;
+    /* padding: 10px 20px; */
+    /* border: none; */
+    /* margin-right: 10px; */
+    /* display: inline-block; */
+    /* font-size: 14px; */
     cursor: pointer;
 }
 
@@ -261,11 +295,13 @@ main::after, section {
 
 /* Estilos del bloque derecho */
 .botones__bloque-der h3 { /* Elemento de título del bloque derecho */
-    color: #21a270;
-    margin-bottom: 1rem;
+    /* color: #21a270; */
+    /* margin-bottom: 1rem; */
 }
 
 .botones__boton-primero, button { /* Elemento de botón primario */
+    /* width: 3rem;
+    height: 3rem; */
     background-color: #21a270;
     color: white;
     border: none;
@@ -276,38 +312,46 @@ main::after, section {
 
 /* Estilos del formulario */
 .form { /* Bloque de formulario */
-    display: inline;
-    margin: -5px;
-    margin-right: 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #f8fdfc;
-    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* margin: -5px; */
+    /* margin-right: 10px; */
+    /* text-align: center; */
+    /* padding: 10px; */
 }
 
 .form__text { /* Elemento de texto del formulario */
-    width: 48%;
+    display: flex;
+    flex-direction: column;
+    height: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 25px;
     margin-bottom: 15px;
     font-size: 14px;
     display: inline-block;
+    /* width: 78px; */
 }
 
-.form__text[type="submit"] { /* Elemento de texto de envío del formulario */
+/* Elemento de texto de envío del formulario */
+/* .form__text[type="submit"] { 
+    display: flex;
+    flex-direction: column;
     width: auto;
-    background-color: #00a66a;
-    color: white;
+    background-color: #da8510;
+    color: rgb(239, 22, 22);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 25px;
-}
+} */
 
 .form__text[type="submit"]:hover { /* Elemento de texto de envío del formulario al pasar el mouse */
-    width: 1000px;
+    /* width: 1000px; */
     margin: 0 auto;
     text-align: center;
     padding: 15px 0;
@@ -315,22 +359,22 @@ main::after, section {
 }
 
 .form__text, input { /* Elemento de texto del formulario */
-    width: 90%;
-    padding: 10px;
+    width: 30px;
+    padding: 15px;
     margin: 10px 0;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #ccc;
-    font-size: 20px;
-    box-sizing: border-box
+    font-size: 15px;
+    /* box-sizing: border-box */
 }
 
 .form__text, button { /* Elemento de texto del formulario */
     margin-top: 1rem;
-    width: 50%;
+    width: 70%;
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .contenido__bloque-izq, .contenido__bloque-der {
     width: 90%;
     display: block;
@@ -361,4 +405,4 @@ main::after, section {
     .phone {
     font-size: 1rem;
     }
-}
+} */

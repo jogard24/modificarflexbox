@@ -29,6 +29,9 @@ main {
     clear: both;
 } */
 
+
+
+
 /* Estilos del encabezado */
 .title { /* Bloque de título */
     text-align: center;
@@ -38,7 +41,7 @@ main {
 }
 
 /* Contenedor principal */
-.title__contenedor *{ /* Elemento contenedor del título */
+.title__contenedor *{ /* Elemento contenedor del sidebar */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -184,13 +187,10 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
     width: 55%;
     margin: 1%;
     background: white;
     padding: 3rem;
-    /* vertical-align: top; */
-    /* box-sizing: border-box; */
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.637);
     height: 37rem;
@@ -263,7 +263,6 @@ main {
 .botones { /* Bloque de botones */
     display: flex;
     flex-direction: column;
-    /* margin-top: 20px; */
 }
 
 /* Estilos de los botones */
@@ -374,18 +373,33 @@ main {
 }
 
 /* Media Queries */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+  .contenido {
+  display: flex;
+  flex-direction: column;
+
+  }
+  
+    .title{
+    display: flex;
+    justify-content: center;
+  }
+
+
     .contenido__bloque-izq, .contenido__bloque-der {
-    width: 90%;
-    display: block;
+    display: flex;
+    width: 40%;
     margin: 1rem auto;
     }
+
+
 
     .title__icons {
     position: fixed;
     display: inline-block;
     justify-content: center;
-    background: #004d40;
+    background: #004d4000;
     }
 
     .title__social-icons li {
@@ -405,4 +419,4 @@ main {
     .phone {
     font-size: 1rem;
     }
-} */
+}

@@ -33,7 +33,7 @@ main::after, section {
 .title { /* Bloque de título */
     text-align: center;
     padding: 1rem;
-    color: white;
+    color: rgb(235, 21, 21);
     font-size: 1.8rem;
 }
 

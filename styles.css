@@ -83,7 +83,8 @@ main {
 /* Estilos de la navegación */
 
 .menu {
-  display: flex;
+  /* display: flex; */
+
 }
 
 .landing { /* Bloque de navegación */
